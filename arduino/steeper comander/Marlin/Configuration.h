@@ -497,10 +497,10 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define Cyclone_Z_Gear_Ratio 15.0/15.0 // Number of tooth (motor/rod)
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {steps_per_rev/(Cyclone_XY_Gear_Ratio*pitch),steps_per_rev/(Cyclone_XY_Gear_Ratio*pitch),steps_per_rev/(Cyclone_Z_Gear_Ratio*pitch),800}  // steps per unit for Cyclone
   
-#define DEFAULT_MAX_FEEDRATE          {500, 500, 250, 45}    // (mm/sec)    
-#define DEFAULT_MAX_ACCELERATION      {3000,3000,3000, 3000}    // X, Y, Z, E maximum start speed for accelerated moves. For Cyclone, we saturate them since we always want accelerated moves
-#define DEFAULT_ACCELERATION          1000     // X, Y, Z and E max acceleration in mm/s^2 for printing moves 
-#define DEFAULT_RETRACT_ACCELERATION  3000   // X, Y, Z and E max acceleration in mm/s^2 for r retracts
+#define DEFAULT_MAX_FEEDRATE          {100, 100, 100, 45}    // (mm/sec)    
+#define DEFAULT_MAX_ACCELERATION      {300,300,300, 300}    // X, Y, Z, E maximum start speed for accelerated moves. For Cyclone, we saturate them since we always want accelerated moves
+#define DEFAULT_ACCELERATION          100     // X, Y, Z and E max acceleration in mm/s^2 for printing moves 
+#define DEFAULT_RETRACT_ACCELERATION  100   // X, Y, Z and E max acceleration in mm/s^2 for r retracts
 
 // Offset of the extruders (uncomment if using more than one and relying on firmware to position when changing).
 // The offset has to be X=0, Y=0 for the extruder 0 hotend (default extruder).
