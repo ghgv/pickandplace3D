@@ -513,6 +513,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define DEFAULT_ZJERK                 0.8    // (mm/sec)
 #define DEFAULT_EJERK                 5.0    // (mm/sec)
 
+
+
 //===========================================================================
 //=============================Additional Features===========================
 //===========================================================================
